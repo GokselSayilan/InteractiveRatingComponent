@@ -1,38 +1,263 @@
-.App {
-  text-align: center;
+.app {
+    height: 100vh;
+    width: 100%;
+    background: #131518;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.appWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ratingBox {
+    width: 415px;
+    height: 415px;
+    border-radius: 30px;
+    background-image: radial-gradient(#232A34, #181E27);
+    padding: 32px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ratingBoxImg {
+    background: #262E38;
+    padding: 16px;
+    border-radius: 50%;
+    margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.ratingBoxTitle {
+    color: white;
+    font-size: 28px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ratingBoxDesc {
+    color: #969FAD;
+    margin-top: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+    line-height: 24px;
+}
+
+.ratingBoxPoints {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.ratingBoxPoint {
+    width: 51px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #7C8798;
+    background-color: #262E38;
+    cursor: pointer;
+
+}
+
+.selectedPoint {
+    background-color: #7C8798;
+    color: white;
+}
+
+
+.ratingBoxButton {
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 4px;
+    background-color: #FC7614;
+    border: none;
+}
+
+
+@media (min-width:1000px) {
+    .ratingBoxPoint:hover {
+        background-color: #FC7614;
+        color: white;
+    }
+
+    .ratingBoxButton:hover {
+        background-color: white;
+        color: #FC7614;
+    }
+}
+
+
+.thanksBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 415px;
+    height: 415px;
+    border-radius: 30px;
+    background-image: radial-gradient(#232A34, #181E27);
+    padding: 45px 36px;
+}
+
+.thanksBoxImg {
+    width: 180px;
+    height: 108px;
+    margin-bottom: 32px;
+}
+
+.thanksBoxSelectedPoint {
+    color: #FC7614;
+    font-size: 15px;
+    margin-bottom: 36px;
+    background-color: #262E38;
+    height: 32px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.thanksBoxTitle {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.thanksBoxDesc {
+    color: #969FAD;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+@media (max-width:500px) {
+    .app {
+        height: 100vh;
+        width: 100%;
+        background: #131518;
+    }
+
+    .appWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .ratingBox {
+        width: 330px;
+        height: 360px;
+        border-radius: 30px;
+        background-image: radial-gradient(#232A34, #181E27);
+        padding: 24px;
+    }
+
+    .ratingBoxImg {
+        background: #262E38;
+        padding: 13px;
+        border-radius: 50%;
+        margin-bottom: 16px;
+    }
+
+    .ratingBoxTitle {
+        color: white;
+        font-size: 24px;
+    }
+
+    .ratingBoxDesc {
+        color: #969FAD;
+        margin-top: 10px;
+        font-size: 14px;
+        margin-bottom: 24px;
+        line-height: 22px;
+    }
+
+    .ratingBoxPoints {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+
+    .ratingBoxPoint {
+        width: 42px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 14px;
+        color: #7C8798;
+        background-color: #262E38;
+        cursor: pointer;
+
+    }
+
+    .selectedPoint {
+        background-color: #7C8798;
+        color: white;
+    }
+
+
+    .ratingBoxButton {
+        cursor: pointer;
+        width: 100%;
+        height: 45px;
+        border-radius: 30px;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        letter-spacing: 4px;
+        background-color: #FC7614;
+        border: none;
+    }
+
+    .thanksBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 330px;
+        height: 360px;
+        border-radius: 30px;
+        background-image: radial-gradient(#232A34, #181E27);
+        padding: 35px 24px;
+    }
+
+    .thanksBoxImg {
+        width: 144px;
+        height: 96px;
+        margin-bottom: 24px;
+    }
+
+    .thanksBoxSelectedPoint {
+        color: #FC7614;
+        font-size: 14px;
+        margin-bottom: 30px;
+        background-color: #262E38;
+        height: 32px;
+        width: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+    }
+
+    .thanksBoxTitle {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .thanksBoxDesc {
+        color: #969FAD;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
